@@ -76,7 +76,7 @@ if len(sys.argv) == 3:
     print("Invalid parameters. Please enter numbers such as YYYY and M or MM.")
 elif len(sys.argv) == 2:
   if sys.argv[1].isdigit():
-    if int(sys.argv[1]) >= 1 and int(sys.argv[1] <= 12):
+    if int(sys.argv[1]) >= 1 and int(sys.argv[1]) <= 12:
       print_calendar(current_year, int(sys.argv[1]))
     else:
       print("Invalid parameter. Please enter a month between 1 and 12.")
